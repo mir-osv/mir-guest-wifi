@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mir Home Guest Internet</title>
+  <style>
+    :root {
+      --accent: #2196f3;
+      --bg: #f5f7fa;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 24px;
+    }
+    .card {
+      width: min(560px, 100%);
+      background: var(--card);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.08);
+      text-align: center;
+    }
+    h1 {
+      margin: 0 0 12px;
+      color: var(--accent);
+      font-size: 30px;
+    }
+    p {
+      margin: 8px 0;
+      line-height: 1.6;
+    }
+    .status {
+      display: inline-block;
+      margin: 14px 0 20px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: #e8f3fe;
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .notice {
+      margin-top: 22px;
+      padding: 16px;
+      border-radius: 10px;
+      background: #f8fafc;
+      text-align: left;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 12px 22px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Mir Home Guest Internet</h1>
+    <div class="status">Authentication Successful</div>
+    <p>You are now connected to the guest Wi-Fi network.</p>
+    <p>Thank you for using the network responsibly.</p>
+
+    <a class="btn" href="https://www.google.com">Continue to Internet</a>
+
+    <div class="notice">
+      Guest access is provided on a best-effort basis. Do not attempt to access,
+      scan, modify, or disrupt other devices, services, or network resources.
+    </div>
+  </main>
+</body>
+</html>
